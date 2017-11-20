@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <seeds>
+        <seed id="1" value="1,1,1,1,1,1,1,1,1" />
+        <seed id="2" value="1,1,1,1,1,1,1,1,2" />
+        <seed id="3" value="1,1,1,1,1,1,1,1,3" />
+        <seed id="4" value="1,1,1,1,1,1,1,1,4" />
+        <seed id="5" value="1,1,1,1,1,1,1,1,5" />
+    </seeds>
+</config>

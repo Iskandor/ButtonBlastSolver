@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config boost_points="3000">
+	<item_types>
+
+		<item_type id="OBJECTIVE1_X_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_1_X" points="50" addon_asset="" />
+
+		<item_type id="OBJECTIVE1_0_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_1_0" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_0_1" type="OBJECTIVE" transformto="OBJECTIVE1_0_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_1_0" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_0_2" type="OBJECTIVE" transformto="OBJECTIVE1_0_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_1_0" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE1_1_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_1_1" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_1_1" type="OBJECTIVE" transformto="OBJECTIVE1_1_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_1_1" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_1_2" type="OBJECTIVE" transformto="OBJECTIVE1_1_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_1_1" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE1_2_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_1_2" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_2_1" type="OBJECTIVE" transformto="OBJECTIVE1_2_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_1_2" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_2_2" type="OBJECTIVE" transformto="OBJECTIVE1_2_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_1_2" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE1_3_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_1_3" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_3_1" type="OBJECTIVE" transformto="OBJECTIVE1_3_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_1_3" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_3_2" type="OBJECTIVE" transformto="OBJECTIVE1_3_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_1_3" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE1_4_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_1_4" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_4_1" type="OBJECTIVE" transformto="OBJECTIVE1_4_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_1_4" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_4_2" type="OBJECTIVE" transformto="OBJECTIVE1_4_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_1_4" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE1_5_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_1_5" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_5_1" type="OBJECTIVE" transformto="OBJECTIVE1_5_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_1_5" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_5_2" type="OBJECTIVE" transformto="OBJECTIVE1_5_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_1_5" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE1_6_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_1_6" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE1_6_1" type="OBJECTIVE" transformto="OBJECTIVE1_6_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_1_6" points="50" addon_asset="Gr_Icon_Objective_1_Life_1" />
+		<item_type id="OBJECTIVE1_6_2" type="OBJECTIVE" transformto="OBJECTIVE1_6_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_1_6" points="50" addon_asset="Gr_Icon_Objective_1_Life_2" />
+
+		<item_type id="OBJECTIVE2_X_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_2_X" points="50" addon_asset="" />
+
+		<item_type id="OBJECTIVE2_0_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_2_0" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_0_1" type="OBJECTIVE" transformto="OBJECTIVE2_0_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_2_0" points="50" addon_asset="Gr_Icon_Objective_2_0_Life1" />
+		<item_type id="OBJECTIVE2_0_2" type="OBJECTIVE" transformto="OBJECTIVE2_0_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_2_0" points="50" addon_asset="Gr_Icon_Objective_2_0_Life2" />
+
+		<item_type id="OBJECTIVE2_1_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_2_1" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_1_1" type="OBJECTIVE" transformto="OBJECTIVE2_1_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_2_1" points="50" addon_asset="Gr_Icon_Objective_2_1_Life1" />
+		<item_type id="OBJECTIVE2_1_2" type="OBJECTIVE" transformto="OBJECTIVE2_1_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_2_1" points="50" addon_asset="Gr_Icon_Objective_2_1_Life2" />
+
+		<item_type id="OBJECTIVE2_2_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_2_2" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_2_1" type="OBJECTIVE" transformto="OBJECTIVE2_2_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_2_2" points="50" addon_asset="Gr_Icon_Objective_2_2_Life1" />
+		<item_type id="OBJECTIVE2_2_2" type="OBJECTIVE" transformto="OBJECTIVE2_2_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_2_2" points="50" addon_asset="Gr_Icon_Objective_2_2_Life2" />
+
+		<item_type id="OBJECTIVE2_3_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_2_3" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_3_1" type="OBJECTIVE" transformto="OBJECTIVE2_3_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_2_3" points="50" addon_asset="Gr_Icon_Objective_2_3_Life1" />
+		<item_type id="OBJECTIVE2_3_2" type="OBJECTIVE" transformto="OBJECTIVE2_3_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_2_3" points="50" addon_asset="Gr_Icon_Objective_2_3_Life2" />
+
+		<item_type id="OBJECTIVE2_4_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_2_4" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_4_1" type="OBJECTIVE" transformto="OBJECTIVE2_4_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_2_4" points="50" addon_asset="Gr_Icon_Objective_2_4_Life1" />
+		<item_type id="OBJECTIVE2_4_2" type="OBJECTIVE" transformto="OBJECTIVE2_4_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_2_4" points="50" addon_asset="Gr_Icon_Objective_2_4_Life2" />
+
+		<item_type id="OBJECTIVE2_5_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_2_5" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_5_1" type="OBJECTIVE" transformto="OBJECTIVE2_5_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_2_5" points="50" addon_asset="Gr_Icon_Objective_2_5_Life1" />
+		<item_type id="OBJECTIVE2_5_2" type="OBJECTIVE" transformto="OBJECTIVE2_5_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_2_5" points="50" addon_asset="Gr_Icon_Objective_2_5_Life2" />
+
+		<item_type id="OBJECTIVE2_6_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_2_6" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE2_6_1" type="OBJECTIVE" transformto="OBJECTIVE2_6_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_2_6" points="50" addon_asset="Gr_Icon_Objective_2_6_Life1" />
+		<item_type id="OBJECTIVE2_6_2" type="OBJECTIVE" transformto="OBJECTIVE2_6_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_2_6" points="50" addon_asset="Gr_Icon_Objective_2_6_Life2" />
+
+
+		<item_type id="OBJECTIVE3" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="0" affected_by_neighbor="NO" affected_by_bottom="1" asset="Gr_Icon_Objective_3" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE5" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="0" affected_by_neighbor="NO" affected_by_bottom="1" asset="Gr_Icon_Objective_5" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE6" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="0" affected_by_neighbor="NO" affected_by_bottom="1" asset="Gr_Icon_Objective_6" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE4" type="ENCHANTMENT" enchantment="ICE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_4" points="50" addon_asset="" />
+		<!--<item_type id="OBJECTIVE7" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Objective_7" points="50" addon_asset="" />-->
+
+		<item_type id="OBJECTIVE7_0_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Objective_7" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE7_0_1" type="OBJECTIVE" transformto="OBJECTIVE7_0_0" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Objective_7" points="20" addon_asset="Gr_Icon_Objective_7_0_Life1" />
+		<item_type id="OBJECTIVE7_0_2" type="OBJECTIVE" transformto="OBJECTIVE7_0_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Objective_7" points="20" addon_asset="Gr_Icon_Objective_7_0_Life2" />
+
+
+		<item_type id="OBJECTIVE8_0_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_8_0" points="500" addon_asset="" addon_effect="GemParticleYellowPool"/>
+		<item_type id="OBJECTIVE8_1_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_8_1" points="500" addon_asset="" addon_effect="GemParticleGreenPool"/>
+		<item_type id="OBJECTIVE8_2_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_8_2" points="500" addon_asset="" addon_effect="GemParticlePurplePool"/>
+		<item_type id="OBJECTIVE8_3_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_8_3" points="500" addon_asset="" addon_effect="GemParticleYellowPool"/>
+		<item_type id="OBJECTIVE8_4_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_8_4" points="500" addon_asset="" addon_effect="GemParticleOrangePool"/>
+		<item_type id="OBJECTIVE8_5_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_8_5" points="500" addon_asset="" addon_effect="GemParticleRedPool"/>
+		<item_type id="OBJECTIVE8_6_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_8_6" points="500" addon_asset="" addon_effect="GemParticleBluePool"/>
+
+		<item_type id="OBJECTIVE9_1" type="ENCHANTMENT" enchantment="SPAWN" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_9_1" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE9_2" type="ENCHANTMENT" enchantment="SPAWN" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_9_2" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE9_3" type="ENCHANTMENT" enchantment="SPAWN" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_9_3" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE9_4" type="ENCHANTMENT" enchantment="SPAWN" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_9_4" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE9_5" type="ENCHANTMENT" enchantment="SPAWN" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_9_5" points="50" addon_asset="" />
+		<item_type id="OBJECTIVE9_6" type="ENCHANTMENT" enchantment="SPAWN" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_9_6" points="50" addon_asset="" />
+
+		<item_type id="OBJECTIVE10" type="ENCHANTMENT" enchantment="PILLOW" static="1" interactive="0" affected_by_boost="0" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Objective_10" points="0" addon_asset="" />
+
+		<item_type id="OBJECTIVE11_0" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_0" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE11_1" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_1" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE11_2" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_2" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE11_3" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_3" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE11_4" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_4" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE11_5" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_5" points="20" addon_asset="" />
+		<item_type id="OBJECTIVE11_6" type="OBJECTIVE" permanent="1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Objective_11_GoalIcon" override_asset="Gr_Icon_Objective_11_6" points="20" addon_asset="" />
+
+    <item_type id="OBJECTIVE12_0_0" type="OBJECTIVE" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_12_0_0" points="50" addon_asset="" />
+    <item_type id="OBJECTIVE12_0_1" type="ENCHANTMENT" enchantment="MOTH" transformto="" enchantto="OBJECTIVE12_0_0" static="0" interactive="0" affected_by_boost="0" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Objective_12_0_0" points="50" addon_asset="" />
+    <item_type id="OBJECTIVE12_0_2" type="OBJECTIVE" transformto="OBJECTIVE12_0_1" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_12_0_1" points="50" addon_asset="" />
+    <item_type id="OBJECTIVE12_0_3" type="OBJECTIVE" transformto="OBJECTIVE12_0_2" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="ANY" affected_by_bottom="0" asset="Gr_Icon_Objective_12_0_2" points="50" addon_asset="" />
+
+    <item_type id="OBJECTIVE14_0_0" type="OBJECTIVE" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="" affected_by_bottom="0" asset="Gr_Icon_Objective_14_0" points="50" />
+    <item_type id="OBJECTIVE14_0_1" type="OBJECTIVE" transformto="OBJECTIVE14_0_0" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="" affected_by_bottom="0" asset="Gr_Icon_Objective_14_1" points="50" />
+    <item_type id="OBJECTIVE14_0_2" type="OBJECTIVE" transformto="OBJECTIVE14_0_1" static="1" interactive="0" affected_by_boost="1" affected_by_neighbor="" affected_by_bottom="0" asset="Gr_Icon_Objective_14_2" points="50" />    
+
+    <item_type id="RANDOM_BLOCK" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="" affected_by_bottom="0" asset="none" points="0" addon_asset="" />
+		<item_type id="BLOCK1" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="BLOCK1" affected_by_bottom="0" asset="Gr_Icon_Block_1" points="0" addon_asset="Gr_Relief_Block_1" />
+		<item_type id="BLOCK2" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="BLOCK2" affected_by_bottom="0" asset="Gr_Icon_Block_2" points="0" addon_asset="Gr_Relief_Block_2" />
+		<item_type id="BLOCK3" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="BLOCK3" affected_by_bottom="0" asset="Gr_Icon_Block_3" points="0" addon_asset="Gr_Relief_Block_3" />
+		<item_type id="BLOCK4" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="BLOCK4" affected_by_bottom="0" asset="Gr_Icon_Block_4" points="0" addon_asset="Gr_Relief_Block_4" />
+		<item_type id="BLOCK5" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="BLOCK5" affected_by_bottom="0" asset="Gr_Icon_Block_5" points="0" addon_asset="Gr_Relief_Block_5" />
+		<item_type id="BLOCK6" type="DEFAULT" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="BLOCK6" affected_by_bottom="0" asset="Gr_Icon_Block_6" points="0" addon_asset="Gr_Relief_Block_6" />
+
+		<item_type id="BOOST1" type="SPECIAL" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_1" points="100" addon_asset="" />
+		<item_type id="BOOST2" type="SPECIAL" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_2" points="100" addon_asset="" />
+
+		<item_type id="BOOST3_1" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_3" points="0" addon_asset="" />
+		<item_type id="BOOST3_2" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_3" points="0" addon_asset="" />
+		<item_type id="BOOST3_3" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_3" points="0" addon_asset="" />
+		<item_type id="BOOST3_4" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_3" points="0" addon_asset="" />
+		<item_type id="BOOST3_5" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_3" points="0" addon_asset="" />
+		<item_type id="BOOST3_6" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_3" points="0" addon_asset="" />
+
+		<item_type id="BOOST4" type="SPECIAL" static="0" interactive="1" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_4" points="100" addon_asset="" />
+
+		<item_type id="BOOST5" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_5" points="0" addon_asset="" />
+		<item_type id="BOOST6" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_6" points="0" addon_asset="" />
+		<item_type id="BOOST7" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_7" points="0" addon_asset="" />
+
+		<item_type id="BOOST8_1" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_8" points="0" addon_asset="" />
+
+		<item_type id="BOOST8_2" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_8" points="0" addon_asset="" />
+
+		<item_type id="BOOST8_3" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_8" points="0" addon_asset="" />
+
+		<item_type id="BOOST8_4" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_8" points="0" addon_asset="" />
+
+		<item_type id="BOOST8_5" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_8" points="0" addon_asset="" />
+
+		<item_type id="BOOST8_6" type="SPECIAL" static="0" interactive="0" affected_by_boost="1" affected_by_neighbor="NO" affected_by_bottom="0" asset="Gr_Icon_Boost_8" points="0" addon_asset="" />
+
+	</item_types>
+	<cell_types>
+		<cell_type id="NONE" interactive="1" asset="" addon_asset="" can_have_item="0" transform_to="" points="0" />
+		<cell_type id="GRID" interactive="1" asset="background" addon_asset="" can_have_item="1" transform_to="" points="0" />
+		<cell_type id="SPAWN" interactive="1" asset="background" addon_asset="" can_have_item="1" transform_to="" points="0" />
+		<cell_type id="BUBBLE" interactive="1" asset="background" addon_asset="Gr_Icon_Bubble" can_have_item="1" transform_to="GRID" points="50" />
+		<cell_type id="PRISON" interactive="0" asset="background" addon_asset="Gr_Icon_Prison" can_have_item="1" transform_to="GRID" points="50" />
+	</cell_types>
+	<evaluates>
+		<evaluate min="5" idItem="BOOST1" asset_icon="Gr_Relief_Boost_1"/>
+		<evaluate min="7" idItem="BOOST2" asset_icon="Gr_Relief_Boost_2"/>
+		<evaluate min="9" idItem="BOOST4" asset_icon="Gr_Relief_Boost_4"/>
+	</evaluates>
+</config>

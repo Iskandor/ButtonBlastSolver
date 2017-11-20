@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Match3Core xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" warning="None" status="0" id="4" skinAtlas="@match3.png" moves="27" seed_category="1" id_powerup="0" star1="1500" star2="3500" star3="5500" maxscore="6500" maxSpawnedItems="0">
+  <conditions>
+    <condition type="collect" count="30" length="0" itemID="BLOCK6" cellTypeID="" />
+    <condition type="collect" count="25" length="0" itemID="BLOCK1" cellTypeID="" />
+    <condition type="collect" count="25" length="0" itemID="BLOCK3" cellTypeID="" />
+  </conditions>
+  <drops>
+    <drop itemID="BLOCK1" weight="12" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK2" weight="6" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK3" weight="12" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK6" weight="12" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+  </drops>
+  <spawns />
+  <cells>
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="BLOCK1" cellTypeID="GRID" />
+    <cell itemID="BLOCK2" cellTypeID="GRID" />
+    <cell itemID="BLOCK1" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="BLOCK3" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK1" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="BLOCK3" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK3" cellTypeID="GRID" />
+    <cell itemID="BLOCK1" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="BLOCK2" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK6" cellTypeID="GRID" />
+    <cell itemID="BLOCK3" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="BLOCK1" cellTypeID="GRID" />
+    <cell itemID="BLOCK2" cellTypeID="GRID" />
+    <cell itemID="BLOCK2" cellTypeID="GRID" />
+    <cell itemID="BLOCK3" cellTypeID="GRID" />
+    <cell itemID="BLOCK2" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+    <cell itemID="" cellTypeID="NONE" />
+  </cells>
+</Match3Core>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <packages>
+        <package id="1" position="1" category="basic" type="coins" price="0.99" currency="USD" rate="10" bonus="0" save="0" title="Small Button Baggie" description="" image="Gr_Ui_Icon_Shop_1.png" ios_id="bb_01" android_id="bb_01" energy_bonus="0" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="20" />
+            </rewards>
+        </package>
+        <package id="2" position="2" category="basic" type="coins" price="4.99" currency="USD" rate="50"   bonus="0" save="15"  title="Tin Full of Buttons" description="" image="Gr_Ui_Icon_Shop_2.png" ios_id="bb_02" android_id="bb_02" energy_bonus="0" >
+        <rewards>
+                <reward id_reward="1" type="resource" cnt="120" />
+            </rewards>
+        </package>
+        <package id="3" position="3" category="basic" type="coins" price="9.99" currency="USD" rate="100" bonus="0" save="20" title="Cookie Jar Filled with Buttons" description="" image="Gr_Ui_Icon_Shop_3.png" ios_id="bb_03" android_id="bb_03" energy_bonus="0" >
+        <rewards>
+                <reward id_reward="1" type="resource" cnt="250" />
+            </rewards>
+        </package>
+        <package id="4" position="4" category="basic" type="coins" price="19.99" currency="USD" rate="200" bonus="0" save="25" title="Button Drawer" description="" image="Gr_Ui_Icon_Shop_4.png" ios_id="bb_04" android_id="bb_04" energy_bonus="2" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="550" />
+            </rewards>
+        </package>
+        <package id="5" position="5" category="basic" type="coins" price="49.99" currency="USD" rate="500" bonus="0" save="30" title="Crate of Buttons" description="" image="Gr_Ui_Icon_Shop_5.png" ios_id="bb_05" android_id="bb_05" energy_bonus="2" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="1450" />
+            </rewards>
+        </package>
+        <package id="6" position="6" category="basic" type="coins" price="99.99" currency="USD" rate="1000" bonus="0" save="35" title="Grandma's Button Stash" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_06" android_id="bb_06" energy_bonus="2" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="3100" />
+            </rewards>
+        </package>
+
+        <package id="7" position="1" category="sale" type="coins" price="6.99" currency="USD" rate="80" bonus="0" save="50" title="Cookie Jar Filled with Buttons *SALE*" description="" image="Gr_Ui_Icon_Shop_3.png" ios_id="bb_07" android_id="bb_07" energy_bonus="0" >
+        <rewards>
+                <reward id_reward="1" type="resource" cnt="280" />
+            </rewards>
+        </package>
+        <package id="8" position="2" category="sale" type="coins" price="10.99" currency="USD" rate="110" bonus="0" save="0" title="Button Drawer" description="" image="Gr_Ui_Icon_Shop_4.png" ios_id="bb_08" android_id="bb_08" energy_bonus="2" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="400" />
+            </rewards>
+        </package>
+        <package id="9" position="3" category="sale" type="coins" price="27.49" currency="USD" rate="275" bonus="0" save="0" title="Crate of Buttons" description="" image="Gr_Ui_Icon_Shop_5.png" ios_id="bb_09" android_id="bb_09" energy_bonus="2" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="1000" />
+            </rewards>
+        </package>
+        <package id="10" position="4" category="sale" type="coins" price="54.99" currency="USD" rate="550" bonus="0" save="0" title="Grandma's Button Stash" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_10" android_id="bb_10" energy_bonus="2" >
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="2000" />
+            </rewards>
+        </package>
+
+        <package id="11" position="1" category="offer" type="coins" price="0.99" currency="USD" rate="15" bonus="0" save="90" title="Starter Pack" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_11" android_id="bb_11" energy_bonus="1" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="200" />
+            </rewards>
+        </package>
+
+        <package id="13" position="1" category="offer" type="coins" price="3.99" currency="USD" rate="40" bonus="0" save="40" title="Small Pack 2" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_13" android_id="bb_13" energy_bonus="2" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="110" />
+                <reward id_reward="2" type="powerup" cnt="1" />
+            </rewards>
+        </package>
+
+        <package id="14" position="1" category="offer" type="coins" price="2.99" currency="USD" rate="30" bonus="0" save="60" title="Small Pack 3" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_14" android_id="bb_14" energy_bonus="4" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="110" />
+                <reward id_reward="4" type="powerup" cnt="1" />
+                <reward id_reward="5" type="powerup" cnt="1" />
+            </rewards>
+        </package>
+
+        <package id="19" position="1" category="offer" type="coins" price="4.99" currency="USD" rate="50" bonus="0" save="25" title="Small Sale 2" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_19" android_id="bb_19" energy_bonus="1" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="65" />
+                <reward id_reward="4" type="powerup" cnt="1" />
+                <reward id_reward="5" type="powerup" cnt="1" />
+                <reward id_reward="6" type="powerup" cnt="1" />
+            </rewards>
+        </package>
+
+        <package id="20" position="1" category="offer" type="coins" price="4.99" currency="USD" rate="50" bonus="0" save="30" title="Small Sale 3" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_20" android_id="bb_20" energy_bonus="4" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="75" />
+                <reward id_reward="4" type="powerup" cnt="2" />
+                <reward id_reward="7" type="powerup" cnt="1" />
+            </rewards>
+        </package>
+
+        <package id="21" position="1" category="offer" type="coins" price="6.99" currency="USD" rate="70" bonus="0" save="35" title="Small Sale 4" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_21" android_id="bb_21" energy_bonus="1" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="140" />
+                <reward id_reward="1" type="powerup" cnt="1" />
+                <reward id_reward="2" type="powerup" cnt="1" />
+                <reward id_reward="7" type="powerup" cnt="1" />
+            </rewards>
+        </package>
+
+        <package id="22" position="1" category="offer" type="coins" price="9.99" currency="USD" rate="100" bonus="0" save="30" title="Small Sale 5" description="" image="Gr_Ui_Icon_Shop_6.png" ios_id="bb_22" android_id="bb_22" energy_bonus="2" sale="65">
+            <rewards>
+                <reward id_reward="1" type="resource" cnt="175" />
+                <reward id_reward="5" type="powerup" cnt="2" />
+                <reward id_reward="6" type="powerup" cnt="2" />
+            </rewards>
+        </package>
+    </packages>
+</config>

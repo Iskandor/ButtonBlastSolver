@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <upsales>
+        <upsale id="1" price="15">
+            <rewards>
+                <reward id_reward="2" type="powerup" cnt="1" />
+            </rewards>
+        </upsale>
+        <upsale id="2" price="20">
+            <rewards>
+                <reward id_reward="3" type="powerup" cnt="1" />
+            </rewards>
+        </upsale>
+        <upsale id="3" price="30">
+            <rewards>
+                <reward id_reward="2" type="powerup" cnt="2" />
+            </rewards>
+        </upsale>
+        <upsale id="4" price="40">
+            <rewards>
+                <reward id_reward="3" type="powerup" cnt="2" />
+            </rewards>
+        </upsale>
+    </upsales>
+</config>

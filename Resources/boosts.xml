@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <boosts>
+        <boost id="1" asset="Gr_Icon_Boost_1.png" asset2="" title="Cross Rocket" description="Start level with one Cross Rocket" price="50" />
+        <boost id="2" asset="Gr_Icon_Boost_2.png" asset2="" title="Wooly Bomb" description="Start level with one Wooly Bomb" price="50" />
+        <boost id="3" asset="Gr_Icon_Boost_4.png" asset2="" title="String Dynamite" description="Start level with one String Dynamite" price="60" />
+        <boost id="4" asset="Gr_Icon_Boost_5.png" asset2="Gr_Icon_Boost_5_Grayscale.png" title="Needle" description="Removes One Block." price="40" />
+        <boost id="5" asset="Gr_Icon_Boost_6.png" asset2="Gr_Icon_Boost_6_Grayscale.png" title="Scissors" description="Clears blocks in a column." price="80" />
+        <boost id="6" asset="Gr_Icon_Boost_7.png" asset2="Gr_Icon_Boost_7_Grayscale.png" title="Flatiron" description="Clears blocks in a row." price="80" />
+        <boost id="7" asset="Gr_Icon_Boost_8.png" asset2="" title="Pincushion" description="Clears blocks of the same color." price="120" />
+        <boost id="8" asset="Gr_Icon_Boost_3.png" asset2="Gr_Icon_Boost_3_Grayscale.png" title="Pincushion" description="Clears blocks of the same color." price="120" />
+    </boosts>
+</config>

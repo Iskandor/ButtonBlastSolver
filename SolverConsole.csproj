@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9CD80C4-E242-4D69-91A2-5B1B6EBC08FD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SolverConsole</RootNamespace>
+    <AssemblyName>SolverConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\Solver\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\AsyncSolver\AsyncSolver.cs" />
+    <Compile Include="src\AsyncSolver\Experiment2.cs" />
+    <Compile Include="src\Example\Example1.cs" />
+    <Compile Include="src\Sofia\Agents\BaseAgent.cs" />
+    <Compile Include="src\Sofia\Agents\IAgent.cs" />
+    <Compile Include="src\Sofia\Algorithm\AsyncDoubleQLearning.cs" />
+    <Compile Include="src\Solver\Experiment1.cs" />
+    <Compile Include="src\Solver\Solver.cs" />
+    <Compile Include="src\AsyncSolver\SolverManager.cs" />
+    <Compile Include="src\Sofia\Agents\DDQN.cs" />
+    <Compile Include="src\Sofia\Agents\DQN.cs" />
+    <Compile Include="src\Example\MazeExample.cs" />
+    <Compile Include="src\Example\FrozenLake.cs" />
+    <Compile Include="src\Example\XOR.cs" />
+    <Compile Include="src\Utils\Logger.cs" />
+    <Compile Include="src\Sofia\Algorithm\Actor.cs" />
+    <Compile Include="src\Sofia\Algorithm\DeepQLearning.cs" />
+    <Compile Include="src\Sofia\Algorithm\DeepDoubleQLearning.cs" />
+    <Compile Include="src\Sofia\Algorithm\Exploration\BoltzmannExploration.cs" />
+    <Compile Include="src\Sofia\Algorithm\Exploration\EGreedyExploration.cs" />
+    <Compile Include="src\Sofia\Algorithm\Exploration\IExploration.cs" />
+    <Compile Include="src\Sofia\Algorithm\QLearning.cs" />
+    <Compile Include="src\Sofia\Algorithm\AsyncQLearning.cs" />
+    <Compile Include="src\Sofia\Algorithm\DoubleQLearning.cs" />
+    <Compile Include="src\Sofia\Agents\AsyncQN.cs" />
+    <Compile Include="src\Sofia\Network\Connection.cs" />
+    <Compile Include="src\Sofia\FLAB\BasePool.cs" />
+    <Compile Include="src\Sofia\FLAB\cuFLAB.cs" />
+    <Compile Include="src\Sofia\FLAB\FLAB.cs" />
+    <Compile Include="src\Sofia\FLAB\pFLAB.cs" />
+    <Compile Include="src\Sofia\IOUtils.cs" />
+    <Compile Include="src\Sofia\JSONObject.cs" />
+    <Compile Include="src\Sofia\Layers\Activation.cs" />
+    <Compile Include="src\Sofia\Layers\BaseLayer.cs" />
+    <Compile Include="src\Sofia\Layers\CoreLayer.cs" />
+    <Compile Include="src\Sofia\Layers\InputLayer.cs" />
+    <Compile Include="src\Sofia\Layers\RecurrentLayer.cs" />
+    <Compile Include="src\Sofia\Network\NetworkUtils.cs" />
+    <Compile Include="src\Sofia\Network\NeuralGroup.cs" />
+    <Compile Include="src\Sofia\Network\NeuralNetwork.cs" />
+    <Compile Include="src\Sofia\Optimizer\ADAM.cs" />
+    <Compile Include="src\Sofia\Optimizer\BackProp.cs" />
+    <Compile Include="src\Sofia\Optimizer\AsyncUnit.cs" />
+    <Compile Include="src\Sofia\Optimizer\BatchingUnit.cs" />
+    <Compile Include="src\Sofia\Optimizer\Optimizer.cs" />
+    <Compile Include="src\Sofia\Optimizer\RMSProp.cs" />
+    <Compile Include="src\Sofia\RandomGenerator.cs" />
+    <Compile Include="src\Utils\SolverConfig.cs" />
+    <Compile Include="src\Utils\StateEncoder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\seeds.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\boosts.xml" />
+    <Content Include="Resources\levels\all\level_00001.xml" />
+    <Content Include="Resources\levels\all\level_00002.xml" />
+    <Content Include="Resources\levels\all\level_00003.xml" />
+    <Content Include="Resources\levels\all\level_00004.xml" />
+    <Content Include="Resources\levels\all\level_00005.xml" />
+    <Content Include="Resources\levels\all\level_00006.xml" />
+    <Content Include="Resources\levels\all\level_00007.xml" />
+    <Content Include="Resources\levels\all\level_00008.xml" />
+    <Content Include="Resources\levels\all\level_00009.xml" />
+    <Content Include="Resources\levels\all\level_00010.xml" />
+    <Content Include="Resources\levels\all\level_00011.xml" />
+    <Content Include="Resources\levels\all\level_00012.xml" />
+    <Content Include="Resources\levels\all\level_00013.xml" />
+    <Content Include="Resources\levels\all\level_00014.xml" />
+    <Content Include="Resources\levels\all\level_00015.xml" />
+    <Content Include="Resources\levels\all\level_00016.xml" />
+    <Content Include="Resources\levels\all\level_00017.xml" />
+    <Content Include="Resources\levels\all\level_00018.xml" />
+    <Content Include="Resources\levels\all\level_00019.xml" />
+    <Content Include="Resources\levels\all\level_00020.xml" />
+    <Content Include="Resources\levels\all\level_00021.xml" />
+    <Content Include="Resources\levels\all\level_00022.xml" />
+    <Content Include="Resources\levels\all\level_00023.xml" />
+    <Content Include="Resources\levels\all\level_00024.xml" />
+    <Content Include="Resources\levels\all\level_00025.xml" />
+    <Content Include="Resources\levels\all\level_00026.xml" />
+    <Content Include="Resources\levels\all\level_00027.xml" />
+    <Content Include="Resources\levels\all\level_00028.xml" />
+    <Content Include="Resources\levels\all\level_00029.xml" />
+    <Content Include="Resources\levels\all\level_00030.xml" />
+    <Content Include="Resources\levels\all\level_00031.xml" />
+    <Content Include="Resources\levels\all\level_00032.xml" />
+    <Content Include="Resources\levels\all\level_00033.xml" />
+    <Content Include="Resources\levels\all\level_00034.xml" />
+    <Content Include="Resources\levels\all\level_00035.xml" />
+    <Content Include="Resources\levels\all\level_00036.xml" />
+    <Content Include="Resources\levels\all\level_00037.xml" />
+    <Content Include="Resources\levels\all\level_00038.xml" />
+    <Content Include="Resources\levels\all\level_00039.xml" />
+    <Content Include="Resources\levels\all\level_00040.xml" />
+    <Content Include="Resources\levels\all\level_00041.xml" />
+    <Content Include="Resources\levels\all\level_00042.xml" />
+    <Content Include="Resources\levels\all\level_00043.xml" />
+    <Content Include="Resources\levels\all\level_00044.xml" />
+    <Content Include="Resources\levels\all\level_00045.xml" />
+    <Content Include="Resources\levels\all\level_00046.xml" />
+    <Content Include="Resources\levels\all\level_00047.xml" />
+    <Content Include="Resources\levels\all\level_00048.xml" />
+    <Content Include="Resources\levels\all\level_00049.xml" />
+    <Content Include="Resources\levels\all\level_00050.xml" />
+    <Content Include="Resources\levels\all\level_00051.xml" />
+    <Content Include="Resources\levels\all\level_00052.xml" />
+    <Content Include="Resources\levels\all\level_00053.xml" />
+    <Content Include="Resources\levels\all\level_00054.xml" />
+    <Content Include="Resources\levels\all\level_00055.xml" />
+    <Content Include="Resources\levels\all\level_00056.xml" />
+    <Content Include="Resources\levels\all\level_00057.xml" />
+    <Content Include="Resources\levels\all\level_00058.xml" />
+    <Content Include="Resources\levels\all\level_00059.xml" />
+    <Content Include="Resources\levels\all\level_00060.xml" />
+    <Content Include="Resources\levels\all\level_00061.xml" />
+    <Content Include="Resources\levels\all\level_00062.xml" />
+    <Content Include="Resources\levels\all\level_00063.xml" />
+    <Content Include="Resources\levels\all\level_00064.xml" />
+    <Content Include="Resources\levels\all\level_00065.xml" />
+    <Content Include="Resources\levels\all\level_00066.xml" />
+    <Content Include="Resources\levels\all\level_00067.xml" />
+    <Content Include="Resources\levels\all\level_00068.xml" />
+    <Content Include="Resources\levels\all\level_00069.xml" />
+    <Content Include="Resources\levels\all\level_00070.xml" />
+    <Content Include="Resources\levels\all\level_00071.xml" />
+    <Content Include="Resources\levels\all\level_00072.xml" />
+    <Content Include="Resources\levels\all\level_00073.xml" />
+    <Content Include="Resources\levels\all\level_00074.xml" />
+    <Content Include="Resources\levels\all\level_00075.xml" />
+    <Content Include="Resources\levels\all\level_00076.xml" />
+    <Content Include="Resources\levels\all\level_00077.xml" />
+    <Content Include="Resources\levels\all\level_00078.xml" />
+    <Content Include="Resources\levels\all\level_00079.xml" />
+    <Content Include="Resources\levels\all\level_00080.xml" />
+    <Content Include="Resources\levels\all\level_00081.xml" />
+    <Content Include="Resources\levels\all\level_00082.xml" />
+    <Content Include="Resources\levels\all\level_00083.xml" />
+    <Content Include="Resources\levels\all\level_00084.xml" />
+    <Content Include="Resources\levels\all\level_00085.xml" />
+    <Content Include="Resources\levels\all\level_00086.xml" />
+    <Content Include="Resources\levels\all\level_00087.xml" />
+    <Content Include="Resources\levels\all\level_00088.xml" />
+    <Content Include="Resources\levels\all\level_00089.xml" />
+    <Content Include="Resources\levels\all\level_00090.xml" />
+    <Content Include="Resources\levels\all\level_00091.xml" />
+    <Content Include="Resources\levels\all\level_00092.xml" />
+    <Content Include="Resources\levels\all\level_00093.xml" />
+    <Content Include="Resources\levels\all\level_00094.xml" />
+    <Content Include="Resources\levels\all\level_00095.xml" />
+    <Content Include="Resources\levels\all\level_00096.xml" />
+    <Content Include="Resources\levels\all\level_00097.xml" />
+    <Content Include="Resources\levels\all\level_00098.xml" />
+    <Content Include="Resources\levels\all\level_00099.xml" />
+    <Content Include="Resources\levels\all\level_00100.xml" />
+    <Content Include="Resources\levels\all\level_00101.xml" />
+    <Content Include="Resources\levels\all\level_00102.xml" />
+    <Content Include="Resources\levels\all\level_00103.xml" />
+    <Content Include="Resources\levels\all\level_00104.xml" />
+    <Content Include="Resources\levels\all\level_00105.xml" />
+    <Content Include="Resources\levels\all\level_00106.xml" />
+    <Content Include="Resources\levels\all\level_00107.xml" />
+    <Content Include="Resources\levels\all\level_00108.xml" />
+    <Content Include="Resources\levels\all\level_00109.xml" />
+    <Content Include="Resources\levels\all\level_00110.xml" />
+    <Content Include="Resources\levels\all\level_00111.xml" />
+    <Content Include="Resources\levels\all\level_00112.xml" />
+    <Content Include="Resources\levels\all\level_00113.xml" />
+    <Content Include="Resources\levels\all\level_00114.xml" />
+    <Content Include="Resources\levels\all\level_00115.xml" />
+    <Content Include="Resources\levels\all\level_00116.xml" />
+    <Content Include="Resources\levels\all\level_00117.xml" />
+    <Content Include="Resources\levels\all\level_00118.xml" />
+    <Content Include="Resources\levels\all\level_00119.xml" />
+    <Content Include="Resources\levels\all\level_00120.xml" />
+    <Content Include="Resources\levels\all\level_00121.xml" />
+    <Content Include="Resources\levels\all\level_00122.xml" />
+    <Content Include="Resources\levels\all\level_00123.xml" />
+    <Content Include="Resources\levels\all\level_00124.xml" />
+    <Content Include="Resources\levels\all\level_00125.xml" />
+    <Content Include="Resources\levels\all\level_00126.xml" />
+    <Content Include="Resources\levels\all\level_00127.xml" />
+    <Content Include="Resources\levels\all\level_00128.xml" />
+    <Content Include="Resources\levels\all\level_00129.xml" />
+    <Content Include="Resources\levels\all\level_00130.xml" />
+    <Content Include="Resources\levels\all\level_00131.xml" />
+    <Content Include="Resources\levels\all\level_00132.xml" />
+    <Content Include="Resources\levels\all\level_00133.xml" />
+    <Content Include="Resources\levels\all\level_00134.xml" />
+    <Content Include="Resources\levels\all\level_00135.xml" />
+    <Content Include="Resources\levels\all\level_00136.xml" />
+    <Content Include="Resources\levels\all\level_00137.xml" />
+    <Content Include="Resources\levels\all\level_00138.xml" />
+    <Content Include="Resources\levels\all\level_00139.xml" />
+    <Content Include="Resources\levels\all\level_00140.xml" />
+    <Content Include="Resources\levels\all\level_00141.xml" />
+    <Content Include="Resources\levels\all\level_00142.xml" />
+    <Content Include="Resources\levels\all\level_00143.xml" />
+    <Content Include="Resources\levels\all\level_00144.xml" />
+    <Content Include="Resources\levels\all\level_00145.xml" />
+    <Content Include="Resources\levels\all\level_00146.xml" />
+    <Content Include="Resources\levels\all\level_00147.xml" />
+    <Content Include="Resources\levels\all\level_00148.xml" />
+    <Content Include="Resources\levels\all\level_00149.xml" />
+    <Content Include="Resources\levels\all\level_00150.xml" />
+    <Content Include="Resources\levels\all\level_00151.xml" />
+    <Content Include="Resources\levels\all\level_00152.xml" />
+    <Content Include="Resources\levels\all\level_00153.xml" />
+    <Content Include="Resources\levels\all\level_00154.xml" />
+    <Content Include="Resources\levels\all\level_00155.xml" />
+    <Content Include="Resources\levels\all\level_00156.xml" />
+    <Content Include="Resources\levels\all\level_00157.xml" />
+    <Content Include="Resources\levels\all\level_00158.xml" />
+    <Content Include="Resources\levels\all\level_00159.xml" />
+    <Content Include="Resources\levels\all\level_00160.xml" />
+    <Content Include="Resources\levels\all\level_00161.xml" />
+    <Content Include="Resources\levels\all\level_00162.xml" />
+    <Content Include="Resources\levels\all\level_00163.xml" />
+    <Content Include="Resources\levels\all\level_00164.xml" />
+    <Content Include="Resources\levels\all\level_00165.xml" />
+    <Content Include="Resources\levels\all\level_00166.xml" />
+    <Content Include="Resources\levels\all\level_00167.xml" />
+    <Content Include="Resources\levels\all\level_00168.xml" />
+    <Content Include="Resources\levels\all\level_00169.xml" />
+    <Content Include="Resources\levels\all\level_00170.xml" />
+    <Content Include="Resources\levels\all\level_00171.xml" />
+    <Content Include="Resources\levels\all\level_00172.xml" />
+    <Content Include="Resources\levels\all\level_00173.xml" />
+    <Content Include="Resources\levels\all\level_00174.xml" />
+    <Content Include="Resources\levels\all\level_00175.xml" />
+    <Content Include="Resources\levels\all\level_00176.xml" />
+    <Content Include="Resources\levels\all\level_00177.xml" />
+    <Content Include="Resources\levels\all\level_00178.xml" />
+    <Content Include="Resources\levels\all\level_00179.xml" />
+    <Content Include="Resources\levels\all\level_00180.xml" />
+    <Content Include="Resources\levels\all\level_00181.xml" />
+    <Content Include="Resources\levels\all\level_00182.xml" />
+    <Content Include="Resources\levels\all\level_00183.xml" />
+    <Content Include="Resources\levels\all\level_00184.xml" />
+    <Content Include="Resources\levels\all\level_00185.xml" />
+    <Content Include="Resources\levels\all\level_00186.xml" />
+    <Content Include="Resources\levels\all\level_00187.xml" />
+    <Content Include="Resources\levels\all\level_00188.xml" />
+    <Content Include="Resources\levels\all\level_00189.xml" />
+    <Content Include="Resources\levels\all\level_00190.xml" />
+    <Content Include="Resources\levels\all\level_00191.xml" />
+    <Content Include="Resources\levels\all\level_00192.xml" />
+    <Content Include="Resources\levels\all\level_00193.xml" />
+    <Content Include="Resources\levels\all\level_00194.xml" />
+    <Content Include="Resources\levels\all\level_00195.xml" />
+    <Content Include="Resources\levels\all\level_00196.xml" />
+    <Content Include="Resources\levels\all\level_00197.xml" />
+    <Content Include="Resources\levels\all\level_00198.xml" />
+    <Content Include="Resources\levels\all\level_00199.xml" />
+    <Content Include="Resources\levels\all\level_00200.xml" />
+    <Content Include="Resources\levels\all\level_00201.xml" />
+    <Content Include="Resources\levels\all\level_00202.xml" />
+    <Content Include="Resources\levels\all\level_00203.xml" />
+    <Content Include="Resources\levels\all\level_00204.xml" />
+    <Content Include="Resources\levels\all\level_00205.xml" />
+    <Content Include="Resources\levels\all\level_00206.xml" />
+    <Content Include="Resources\levels\all\level_00207.xml" />
+    <Content Include="Resources\levels\all\level_00208.xml" />
+    <Content Include="Resources\levels\all\level_00209.xml" />
+    <Content Include="Resources\levels\all\level_00210.xml" />
+    <Content Include="Resources\levels\all\level_00211.xml" />
+    <Content Include="Resources\levels\all\level_00212.xml" />
+    <Content Include="Resources\levels\all\level_00213.xml" />
+    <Content Include="Resources\levels\all\level_00214.xml" />
+    <Content Include="Resources\levels\all\level_00215.xml" />
+    <Content Include="Resources\levels\all\level_00216.xml" />
+    <Content Include="Resources\levels\all\level_00217.xml" />
+    <Content Include="Resources\levels\all\level_00218.xml" />
+    <Content Include="Resources\levels\all\level_00219.xml" />
+    <Content Include="Resources\levels\all\level_00220.xml" />
+    <Content Include="Resources\levels\all\level_00221.xml" />
+    <Content Include="Resources\levels\all\level_00222.xml" />
+    <Content Include="Resources\levels\all\level_00223.xml" />
+    <Content Include="Resources\levels\all\level_00224.xml" />
+    <Content Include="Resources\levels\all\level_00225.xml" />
+    <Content Include="Resources\levels\all\level_00226.xml" />
+    <Content Include="Resources\levels\all\level_10000.xml" />
+    <Content Include="Resources\levels\all\level_10001.xml" />
+    <Content Include="Resources\levels\all\level_10002.xml" />
+    <Content Include="Resources\levels\all\level_10003.xml" />
+    <Content Include="Resources\levels\all\level_10004.xml" />
+    <Content Include="Resources\levels\all\level_10005.xml" />
+    <Content Include="Resources\levels\all\level_10006.xml" />
+    <Content Include="Resources\levels\all\level_10007.xml" />
+    <Content Include="Resources\levels\all\level_10008.xml" />
+    <Content Include="Resources\levels\all\level_10009.xml" />
+    <Content Include="Resources\match31config.xml" />
+    <Content Include="Resources\packages.xml" />
+    <Content Include="Resources\seeds.xml" />
+    <Content Include="Resources\themes_config.xml" />
+    <Content Include="Resources\upsales.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolverAPI\SolverAPI.csproj">
+      <Project>{d77f1fd7-fb5e-4eb4-8e25-ee3d23b95081}</Project>
+      <Name>SolverAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

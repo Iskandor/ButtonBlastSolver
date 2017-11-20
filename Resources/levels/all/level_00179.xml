@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Match3Core xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" warning="None" name="sergej" status="0" id="179" skinAtlas="@match3.png" moves="55" seed_category="8" id_powerup="3" star1="10380" star2="42600" star3="74800" maxscore="82300" maxSpawnedItems="0">
+  <conditions>
+    <condition type="collect" count="22" length="0" itemID="" cellTypeID="BUBBLE" />
+    <condition type="collect" count="27" length="0" itemID="" cellTypeID="PRISON" />
+    <condition type="collect" count="25" length="0" itemID="OBJECTIVE11_0" cellTypeID="" />
+  </conditions>
+  <drops>
+    <drop itemID="BLOCK1" weight="10" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK2" weight="10" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK3" weight="10" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK5" weight="10" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK6" weight="0" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+  </drops>
+  <spawns />
+  <cells>
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE11_0" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_3_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_3_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_3_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE11_0" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_3_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE11_0" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_5_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_5_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_5_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE11_0" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE8_5_0" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="BUBBLE" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="PRISON" />
+    <cell itemID="OBJECTIVE11_0" cellTypeID="GRID" />
+  </cells>
+</Match3Core>

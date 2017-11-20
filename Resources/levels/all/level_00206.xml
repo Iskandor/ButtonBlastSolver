@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Match3Core xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" warning="None" status="0" id="206" skinAtlas="@match3.png" moves="43" seed_category="4" id_powerup="3" star1="9330" star2="11700" star3="18200" maxscore="20000" maxSpawnedItems="0">
+  <conditions>
+    <condition type="collect" count="2" length="0" itemID="OBJECTIVE5" cellTypeID="" />
+    <condition type="collect" count="2" length="0" itemID="OBJECTIVE3" cellTypeID="" />
+    <condition type="collect" count="86" length="0" itemID="OBJECTIVE1_0_0" cellTypeID="" />
+  </conditions>
+  <drops>
+    <drop itemID="BLOCK1" weight="100" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK3" weight="100" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK4" weight="100" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="BLOCK6" weight="100" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="OBJECTIVE3" weight="10" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="OBJECTIVE5" weight="10" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+    <drop itemID="OBJECTIVE1_0_0" weight="50" minBeforeCompleted="0" maxBeforeCompleted="0" minAfterCompleted="0" maxAfterCompleted="0" />
+  </drops>
+  <spawns>
+    <spawn itemID="OBJECTIVE1_0_0" weight="0" maxOnGrid="2" maxInLevel="1000" />
+  </spawns>
+  <cells>
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="RANDOM_BLOCK" cellTypeID="GRID" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+    <cell itemID="OBJECTIVE1_0_0" cellTypeID="SPAWN" />
+  </cells>
+</Match3Core>
