@@ -16,7 +16,6 @@ public class AsyncSolver : Solver
 
     public AsyncSolver(InputInterface p_inputInterface, StateEncoder p_encoder, IAgent p_agent, IExploration p_exp, Logger p_logger) : base(p_inputInterface, p_encoder, p_agent, p_exp, p_logger)
     {
-        //_gridClick = Vector.Zero(p_encoder.GetActionDim());
     }
 
     public void Start(int p_learner, bool p_test = false)
@@ -110,32 +109,6 @@ public class AsyncSolver : Solver
         waitingForInterface = false;
     }
 
-    /*
-    private void GridCheck()
-    {        
-        int row = _gridCheck / 9;
-        int column = _gridCheck % 9;
-        
-        new GridClickRequest(_inputInterface).Send(_level, _seed, _gameState.levelScore, _gameState.powerupScore, _gameState.goals, _gameState.grid, _gameState.randomHistory, row, column, false, OnGridCheckCompleted);
-    }
-
-    private void OnGridCheckCompleted(GridClickRequest.ResultData result)
-    {
-        _gridClick[_gridCheck] = result.validTurn ? 1 : 0;
-        _gridCheck++;
-        if (_gridCheck < _encoder.GetActionDim() - 1)
-        {
-            GridCheck();            
-        }        
-        else
-        {
-            _gridClick[_gridCheck] = _gameState.powerupScore / _inputInterface.gridDefinition.BoostPoints;
-            _gridCheck = 0;
-            waitingForInterface = false;
-        }
-    }
-    */
-
     override protected void Train(bool p_validTurn, List<GridDto> p_grid, List<GameGoalDto> p_goals, int p_powerupScore)
     {
         Vector.Release(_state1);
@@ -171,12 +144,13 @@ public class AsyncSolver : Solver
 
     override protected float GetReward(bool p_validTurn, List<GameGoalDto> p_goals)
     {
-        return Reward2(p_validTurn, p_goals);
+        //return _learner % 2 == 0 ? Reward1(p_validTurn, p_goals) : Reward2(p_validTurn, p_goals);
+        return Reward3(p_validTurn, p_goals);
     }
 
     private float Reward1(bool p_validTurn, List<GameGoalDto> p_goals)
     {
-        float reward = 1;
+        float reward = 0;
 
         if (p_validTurn)
         {
@@ -277,21 +251,18 @@ public class AsyncSolver : Solver
 
     private float Reward3(bool p_validTurn, List<GameGoalDto> p_goals)
     {
-        float reward = 1;
+        float reward = 0;
 
         if (p_validTurn)
         {
             double diff = 0;
-            double norm = 0;
 
             for (int i = 0; i < p_goals.Count; i++)
             {
-                diff += Math.Pow(_goals0[i].remainingCount - p_goals[i].remainingCount, 2);
-                norm += Math.Pow(_levelConfig.goals[i].count, 2);
+                diff += Math.Pow((float)(_goals0[i].remainingCount - p_goals[i].remainingCount) / _levelConfig.goals[i].count, 2);
             }
 
             diff = Math.Sqrt(diff);
-            norm = Math.Sqrt(norm);
 
             if (diff > 0)
             {
@@ -299,17 +270,17 @@ public class AsyncSolver : Solver
 
                 for (int i = 0; i < p_goals.Count; i++)
                 {
-                    advantage += Math.Pow(_levelConfig.goals[i].count - p_goals[i].remainingCount, 2);
+                    advantage += Math.Pow(1 - ((float)(_levelConfig.goals[i].count - p_goals[i].remainingCount) / _levelConfig.goals[i].count), 2);
                 }
 
-                advantage = Math.Sqrt(advantage) / norm;
+                advantage = Math.Sqrt(advantage);
 
                 //Console.WriteLine(advantage);
-                //Console.WriteLine(diff / norm * advantage);
+                //Console.WriteLine(diff);
 
-                reward = (float)advantage * 10;
+                reward = (float)Math.Exp(-advantage);
+                //Console.WriteLine(reward);
             }
-            Console.WriteLine(reward);
         }
         else
         {

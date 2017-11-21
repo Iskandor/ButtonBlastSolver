@@ -44,6 +44,8 @@ public class Solver
     private List<Vector> _DEBUG_clicks;
     private int _DEBUG_limit;
 
+    private Dictionary<int, int> _histogram;
+
     public bool Started
     {
         get { return started; }
@@ -57,6 +59,7 @@ public class Solver
         _exploration = p_exp;
         _logger = p_logger;
         _gameState = new StateVar();
+        _histogram = new Dictionary<int, int>();
     }
 
     public void Start(bool p_test = false)
@@ -179,6 +182,17 @@ public class Solver
         {
             //if (finished > 0) _wins++;
             //if (finished < 0) _loses++;
+            if (_test)
+            {
+                if (_histogram.ContainsKey(_validMoves))
+                {
+                    _histogram[_validMoves]++;
+                }
+                else
+                {
+                    _histogram[_validMoves] = 1;
+                }
+            }
             
             Console.WriteLine("Epoch " + (_wins + _loses) + ", seed " + _seed + " >> moves (" + _validMoves + " / " + _moves + ") , win rate (" + _wins + " / " + _loses + ") : reward " + _accReward);
             _logger.Log(_wins + ";" + _loses + ";" + _seed + ";" + _validMoves + ";" + _moves + ";" + _accReward);
@@ -269,5 +283,10 @@ public class Solver
         }
 
         return reward;
+    }
+
+    public Dictionary<int, int> Histogram
+    {
+        get { return _histogram; }
     }
 }

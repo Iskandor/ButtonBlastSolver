@@ -5,14 +5,14 @@ namespace Sofia.Algorithm.Exploration
 {
     class BoltzmannExploration : IExploration
     {
-        private float _startExp, _endExp;
+        private float _startTemp, _endTemp;
         private float _temperature;
 
-        public BoltzmannExploration(float p_startExp, float p_endExp)
+        public BoltzmannExploration(float p_startTemp, float p_endTemp)
         {
-            _startExp = p_startExp;
-            _endExp = p_endExp;
-            _temperature = _startExp;
+            _startTemp = p_startTemp;
+            _endTemp = p_endTemp;
+            _temperature = _startTemp;
         }
 
         public void Init(params float[] p_params)
@@ -47,8 +47,7 @@ namespace Sofia.Algorithm.Exploration
 
         public void UpdateParams(float p_f)
         {
-            //float exp = _startExp + (_endExp - _startExp) * p_f;
-            _temperature = p_f < 0.5f ? _startExp : _endExp;
+            _temperature = _startTemp + (_endTemp - _startTemp) * p_f;
         }
 
         public float Temperature

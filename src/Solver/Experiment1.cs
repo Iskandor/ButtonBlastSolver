@@ -3,6 +3,8 @@ using Newtonsoft.Json;
 using Sofia;
 using Sofia.Algorithm.Exploration;
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace ButtonBlastSolver
 {
@@ -98,7 +100,7 @@ namespace ButtonBlastSolver
             Console.WriteLine("Epochs: " + EPOCHS);
 
             IExploration exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
-            exp.Init(0.1f, 1f);
+            exp.Init(0f, 0f);
             //tester.Start(new BoltzmannExploration(2, 0, -4));
 
             _solver.Start(_tester);
@@ -124,8 +126,28 @@ namespace ButtonBlastSolver
         {
             _logger.Close();
             Console.WriteLine("Saving...");
-            _agent.Save("critic_" + _timestamp + ".json");
+            if (_tester)
+            {
+                SaveHistogram(_solver.Histogram);
+            }
+            else
+            {
+                _agent.Save("critic_" + _timestamp + ".json");
+            }
+            
             Console.WriteLine("Saved");
+        }
+
+        private void SaveHistogram(Dictionary<int, int> p_histogram)
+        {
+            StreamWriter file = new StreamWriter("hist_" + _timestamp + ".csv", false);
+
+            foreach(KeyValuePair<int, int> p in p_histogram)
+            {
+                file.WriteLine(p.Key + ";" + p.Value);
+            }
+
+            file.Close();
         }
     }
 }

@@ -28,8 +28,10 @@ namespace ButtonBlastSolver
             experiment1.Run(true);
             */
 
+            /*
             Experiment2 experiment2 = new Experiment2();
             experiment2.Run();
+            */
 
             Console.WriteLine("Press any key...");
             Console.ReadLine();

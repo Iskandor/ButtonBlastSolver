@@ -38,9 +38,9 @@ public class SolverManager
         for (int i = 0; i < asyncLearners; i++)
         {
             IExploration exp = null;
-            //exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.12f);
-            exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
-            exp.Init(0.02f, 0f);
+            exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.12f);
+            //exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
+            //exp.Init(0.02f, 0f);
 
             /*
             if (i % 2 == 0)

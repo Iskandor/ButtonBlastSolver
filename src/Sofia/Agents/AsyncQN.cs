@@ -33,8 +33,7 @@ namespace Sofia
             {
                 _networkQ = new NeuralNetwork();
                 _networkQ.AddLayer("input", new InputLayer(GetParam(STATE_DIM)), BaseLayer.TYPE.INPUT);
-                //_networkQ.AddLayer("hidden0", new CoreLayer(SolverConfig.GetInstance().hidden_layer, ACTIVATION.RELU, BaseLayer.TYPE.HIDDEN), BaseLayer.TYPE.HIDDEN);
-                _networkQ.AddLayer("hidden0", new RecurrentLayer(SolverConfig.GetInstance().hidden_layer, ACTIVATION.RELU, BaseLayer.TYPE.HIDDEN), BaseLayer.TYPE.HIDDEN);
+                _networkQ.AddLayer("hidden0", new CoreLayer(SolverConfig.GetInstance().hidden_layer, ACTIVATION.RELU, BaseLayer.TYPE.HIDDEN), BaseLayer.TYPE.HIDDEN);
                 _networkQ.AddLayer("output", new CoreLayer(GetParam(ACTION_DIM), ACTIVATION.LINEAR, BaseLayer.TYPE.OUTPUT), BaseLayer.TYPE.OUTPUT);
 
                 // feed-forward connections
