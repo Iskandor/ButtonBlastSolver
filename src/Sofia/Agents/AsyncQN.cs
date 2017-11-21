@@ -80,6 +80,17 @@ namespace Sofia
         override public int ChooseAction(IExploration p_exp, Vector p_estimate)
         {
             _action = p_exp.ChooseAction(p_estimate);
+
+            /*
+            BoltzmannExploration exp = (BoltzmannExploration)p_exp;
+
+            for(int i = 0; i < 5; i++)
+            {
+                exp.Temperature = 0.5f * i + 0.15f; 
+                exp.ChooseAction(p_estimate);
+            }
+            */
+
             return _action;
         }
 

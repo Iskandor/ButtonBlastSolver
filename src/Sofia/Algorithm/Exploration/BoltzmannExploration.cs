@@ -38,6 +38,14 @@ namespace Sofia.Algorithm.Exploration
                 pi[i] = exp[i] / sumexp;
             }
 
+            /*
+            for(int i = 0; i < 4; i++)
+            {
+                Console.Write(pi[i] + " ");
+            }
+            Console.WriteLine();
+            */
+
             action = RandomGenerator.getInstance().GetRandom(pi);
 
             if (action == -1) action = 0;
@@ -53,6 +61,7 @@ namespace Sofia.Algorithm.Exploration
         public float Temperature
         {
             get { return _temperature; }
+            set { _temperature = value; }
         }
 
         override public string ToString()

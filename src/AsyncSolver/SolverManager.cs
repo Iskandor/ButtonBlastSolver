@@ -2,6 +2,7 @@
 using Sofia;
 using Sofia.Algorithm.Exploration;
 using System;
+using System.Collections.Generic;
 
 public class SolverManager
 {
@@ -10,6 +11,7 @@ public class SolverManager
     
     private AsyncQN _agent;
     private AsyncSolver[] _learners;
+    private Dictionary<int, int> _actorMonitor;
 
     private long _timestamp;
     private Logger _logger;
@@ -29,6 +31,7 @@ public class SolverManager
         _logger.Log(JsonConvert.SerializeObject(SolverConfig.GetInstance()));
 
         int asyncLearners = SolverConfig.GetInstance().async_learners;
+        _actorMonitor = new Dictionary<int, int>();
 
         _inputInterface = new InputInterface();
         _encoder = new StateEncoder(_inputInterface);
@@ -38,7 +41,7 @@ public class SolverManager
         for (int i = 0; i < asyncLearners; i++)
         {
             IExploration exp = null;
-            exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.12f);
+            exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.15f);
             //exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
             //exp.Init(0.02f, 0f);
 
@@ -120,9 +123,22 @@ public class SolverManager
                 _learners[i].Reset();
                 _learners[i].UpdateParams(FG, p_epochs);
 
-                Console.WriteLine("Epoch " + FG);
 
-                _learners[i].Update();
+                if (_actorMonitor.ContainsKey(i))
+                {
+                    _actorMonitor[i]++;
+                }
+                else
+                {
+                    _actorMonitor[i] = 1;
+                }
+
+                foreach (int v in _actorMonitor.Values)
+                {
+                    Console.Write(v + " ");
+                }
+                Console.WriteLine();
+                Console.WriteLine("Epoch " + FG);
             }
             _agent.UpdateQt();
         }
