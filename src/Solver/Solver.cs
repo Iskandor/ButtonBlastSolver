@@ -21,7 +21,7 @@ public class Solver
     protected InputInterface  _inputInterface;
     protected StateEncoder _encoder;
     protected IExploration _exploration;
-    protected IAgent _agent;
+    protected BaseAgent _agent;
     protected Logger _logger;
 
     protected  StateVar _gameState;
@@ -51,7 +51,7 @@ public class Solver
         get { return started; }
     }
 
-    public Solver(InputInterface p_inputInterface, StateEncoder p_encoder, IAgent p_agent, IExploration p_exp, Logger p_logger)
+    public Solver(InputInterface p_inputInterface, StateEncoder p_encoder, BaseAgent p_agent, IExploration p_exp, Logger p_logger)
     {
         _inputInterface = p_inputInterface;
         _encoder = p_encoder;
@@ -94,7 +94,7 @@ public class Solver
 
     public void UpdateParams(int p_e, int p_epochs)
     {
-        _exploration.UpdateParams((float)p_e / p_epochs);
+        _exploration.UpdateParams((float)p_e / (p_epochs / 2));
         Console.WriteLine("Exploration param >> " + _exploration.ToString());
         _agent.GetOptimizer().UpdateAlpha((float)p_e / p_epochs);
         Console.WriteLine("Learning param >> " + _agent.GetOptimizer().Alpha.ToString());

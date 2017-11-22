@@ -3,28 +3,41 @@ using FLAB;
 
 namespace Sofia { 
 
-    public class Actor
+    public class ActorCritic
     {
         private NeuralNetwork _network;
         private Optimizer _optimizer;
         private float _gamma;
 
-        public Actor(Optimizer p_optimizer, NeuralNetwork p_network, float p_gamma)
+        public ActorCritic(Optimizer p_optimizer, NeuralNetwork p_network, float p_gamma)
         {
             _optimizer = p_optimizer;
             _network = p_network;
             _gamma = p_gamma;
         }
 
-        public double Train(Vector p_state0, int p_action, float p_value0, float p_value1, float p_reward)
+        public void Dispose()
+        {
+            _optimizer.Dispose();
+        }
+
+        public double Train(Vector p_state0, int p_action, Vector p_state1, float p_reward)
         {
             double mse = 0;
+            int criticOutput = _network.Output.Size - 1;
 
+            _network.Activate(p_state1);
+            float value1 = _network.Output[criticOutput];
             _network.Activate(p_state0);
+            float value0 = _network.Output[criticOutput];
+
             Vector target = Vector.Copy(_network.Output);
-            target[p_action] = p_reward + _gamma * p_value1 - p_value0;
+            target[p_action] = p_reward + _gamma * value1 - value0;
+            target[criticOutput] = p_reward + _gamma * value1;
 
             mse = _optimizer.Train(p_state0, target);
+
+            Vector.Release(target);
 
             return mse;
         }
@@ -37,9 +50,9 @@ namespace Sofia {
             }
         }
 
-        public void Activate(Vector p_input)
+        public Vector Activate(Vector p_input)
         {
-            _network.Activate(p_input);
+            return _network.Activate(p_input);
         }
 
         public Vector Output
@@ -50,6 +63,11 @@ namespace Sofia {
         public NeuralNetwork Network
         {
             get { return _network; }
+        }
+
+        public Optimizer Optimizer
+        {
+            get { return _optimizer; }
         }
     }
 

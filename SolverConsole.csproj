@@ -52,8 +52,8 @@
     <Compile Include="src\AsyncSolver\AsyncSolver.cs" />
     <Compile Include="src\AsyncSolver\Experiment2.cs" />
     <Compile Include="src\Example\Example1.cs" />
+    <Compile Include="src\Sofia\Agents\ACN.cs" />
     <Compile Include="src\Sofia\Agents\BaseAgent.cs" />
-    <Compile Include="src\Sofia\Agents\IAgent.cs" />
     <Compile Include="src\Sofia\Algorithm\AsyncDoubleQLearning.cs" />
     <Compile Include="src\Solver\Experiment1.cs" />
     <Compile Include="src\Solver\Solver.cs" />
@@ -64,7 +64,7 @@
     <Compile Include="src\Example\FrozenLake.cs" />
     <Compile Include="src\Example\XOR.cs" />
     <Compile Include="src\Utils\Logger.cs" />
-    <Compile Include="src\Sofia\Algorithm\Actor.cs" />
+    <Compile Include="src\Sofia\Algorithm\ActorCritic.cs" />
     <Compile Include="src\Sofia\Algorithm\DeepQLearning.cs" />
     <Compile Include="src\Sofia\Algorithm\DeepDoubleQLearning.cs" />
     <Compile Include="src\Sofia\Algorithm\Exploration\BoltzmannExploration.cs" />

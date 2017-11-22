@@ -21,9 +21,9 @@ namespace ButtonBlastSolver
 
             //BasePool.StrongControl = true;
 
-            //IExploration exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
-            //exp.Init(0.1f, 1f);
-            IExploration exp = new BoltzmannExploration(0.12f, 0.06f);
+            IExploration exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
+            exp.Init(0.02f, 0f);
+            //IExploration exp = new BoltzmannExploration(0.12f, 0.06f);
             tester.Start(exp);
 
             for (int e = 0; e < EPOCHS; e++)

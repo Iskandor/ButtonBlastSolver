@@ -6,7 +6,8 @@ using System.Collections.Generic;
 
 public class MazeExample
 {
-    DQN _agent;
+    //DQN _agent;
+    ACN _agent;
     IExploration _exp;
     Vector _state0, _state1;
     int _moves;
@@ -27,11 +28,6 @@ public class MazeExample
         get { return started; }
     }
 
-    public DQN Agent
-    {
-        get { return _agent; }
-    }
-
     public void Start(IExploration p_exp)
     {
         _logger = new Logger();
@@ -42,7 +38,7 @@ public class MazeExample
 
         _wins = _loses = 0;
         _exp = p_exp;
-        _agent = new DQN();
+        _agent = new ACN();
         _firstRun = true;
         _environment = new FrozenLake();
         Reset();
@@ -52,7 +48,9 @@ public class MazeExample
     {
         if (started && waitingForInterface == false)
         {
-            int action = _agent.ChooseAction(_exp, _agent.GetEstimate(_state0));
+            Vector p = _agent.GetEstimate(_state0);
+            int action = _agent.ChooseAction(_exp, p);
+            Vector.Release(p);
             waitingForInterface = true; // musi byt este pred send
             _environment.DoAction(action);
             OnGridClickCompleted();

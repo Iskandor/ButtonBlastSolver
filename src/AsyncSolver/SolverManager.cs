@@ -122,7 +122,7 @@ public class SolverManager
             {                
                 FG++;
                 _learners[i].Reset();
-                _learners[i].UpdateParams(FG, p_epochs / 2);
+                _learners[i].UpdateParams(FG, p_epochs);
 
 
                 if (_actorMonitor.ContainsKey(i))

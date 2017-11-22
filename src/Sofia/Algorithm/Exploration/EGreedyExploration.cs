@@ -21,7 +21,7 @@ namespace Sofia.Algorithm.Exploration
             _sigma = p_params[1];
         }
 
-        public int ChooseAction(Vector p_estimates)
+        public int ChooseAction(Vector p_estimates, bool p_probabilities = false)
         {
             int action = 0;
             double random = RandomGenerator.getInstance().Rand(0f, 1f);

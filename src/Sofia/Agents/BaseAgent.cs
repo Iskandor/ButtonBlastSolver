@@ -5,7 +5,7 @@ using Sofia.Algorithm.Exploration;
 
 namespace Sofia
 {
-    public class BaseAgent : IAgent
+    public class BaseAgent
     {
         public const string BOOST_INDEX = "BOOST_INDEX";
         public const string ACTION_DIM = "ACTION_DIM";

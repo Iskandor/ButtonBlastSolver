@@ -11,7 +11,7 @@ public class AsyncSolver : Solver
 
     private Match3LevelConfig _levelConfig;
 
-    public AsyncSolver(InputInterface p_inputInterface, StateEncoder p_encoder, IAgent p_agent, IExploration p_exp, Logger p_logger) : base(p_inputInterface, p_encoder, p_agent, p_exp, p_logger)
+    public AsyncSolver(InputInterface p_inputInterface, StateEncoder p_encoder, BaseAgent p_agent, IExploration p_exp, Logger p_logger) : base(p_inputInterface, p_encoder, p_agent, p_exp, p_logger)
     {
     }
 

@@ -22,7 +22,7 @@ namespace Sofia.Algorithm.Exploration
             _minTemp = p_params[0];
         }
 
-        public int ChooseAction(Vector p_estimates)
+        public int ChooseAction(Vector p_estimates, bool p_probabilities = false)
         {
             int dim = p_estimates.Size;
             float[] pi = new float[dim];
@@ -30,15 +30,25 @@ namespace Sofia.Algorithm.Exploration
             float sumexp = 0;
             int action = 0;
 
-            for (int i = 0; i < dim; i++)
+            if (p_probabilities)
             {
-                exp[i] = (float)Math.Exp(p_estimates[i] / _temperature);
-                sumexp += exp[i];
+                for (int i = 0; i < dim; i++)
+                {
+                    pi[i] = p_estimates[i];
+                }
             }
-
-            for (int i = 0; i < dim; i++)
+            else
             {
-                pi[i] = exp[i] / sumexp;
+                for (int i = 0; i < dim; i++)
+                {
+                    exp[i] = (float)Math.Exp(p_estimates[i] / _temperature);
+                    sumexp += exp[i];
+                }
+
+                for (int i = 0; i < dim; i++)
+                {
+                    pi[i] = exp[i] / sumexp;
+                }
             }
 
             /*
