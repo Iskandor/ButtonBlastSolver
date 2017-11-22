@@ -8,7 +8,7 @@ namespace Sofia
 {
     public class AsyncQN : BaseAgent
     {
-        private List<AsyncQLearning> _learners;
+        private List<AsyncDoubleQLearning> _learners;
 
         private int _action;
         private int _learner, _learnerSize;
@@ -20,7 +20,7 @@ namespace Sofia
         public AsyncQN(int p_learners)
         {
             _learnerSize = p_learners;
-            _learners = new List<AsyncQLearning>(p_learners);
+            _learners = new List<AsyncDoubleQLearning>(p_learners);
         }
 
         override public void Init(NeuralNetwork p_network = null)
@@ -49,7 +49,7 @@ namespace Sofia
 
             for (int i = 0; i < _learners.Capacity; i++)
             {
-                AsyncQLearning worker = new AsyncQLearning(new ADAM(_networkQ), _networkQ, _networkQt, 0.99f, SolverConfig.GetInstance().async_update);
+                AsyncDoubleQLearning worker = new AsyncDoubleQLearning(new ADAM(_networkQ), _networkQ, _networkQt, 0.99f, SolverConfig.GetInstance().async_update);
                 //worker.SetAlpha(SolverConfig.GetInstance().learning_rate);
                 worker.Optimizer.InitAlpha(SolverConfig.GetInstance().learning_rate, SolverConfig.GetInstance().learning_rate / 10);
                 _learners.Add(worker);

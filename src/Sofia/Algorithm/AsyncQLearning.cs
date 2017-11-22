@@ -5,12 +5,12 @@ namespace Sofia
 {
     public class AsyncQLearning
     {
-        private NeuralNetwork _networkQ;
-        private NeuralNetwork _networkQt;
-        private Optimizer _optimizer;
-        private float _gamma;
+        protected NeuralNetwork _networkQ;
+        protected NeuralNetwork _networkQt;
+        protected Optimizer _optimizer;
+        protected float _gamma;
 
-        private AsyncUnit _asyncUnit;
+        protected AsyncUnit _asyncUnit;
 
         public AsyncQLearning(Optimizer p_optimizer, NeuralNetwork p_networkQ, NeuralNetwork p_networkQt, float p_gamma, int p_asynchUpdate) {
             _optimizer = p_optimizer;
@@ -60,7 +60,7 @@ namespace Sofia
             return mse;
         }
 
-        private float CalcMaxQa(Vector p_state)
+        virtual protected float CalcMaxQa(Vector p_state)
         {
             _networkQt.Activate(p_state);
 

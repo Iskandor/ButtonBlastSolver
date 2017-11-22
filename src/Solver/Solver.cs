@@ -233,7 +233,7 @@ public class Solver
     protected int IsFinished(bool p_validTurn, List<GameGoalDto> p_goals)
     {
         bool goalsCompleted = true;
-        bool turnsDepleted = false; //_validMoves == _maxMoves; podmienka ukoncenia hry
+        bool turnsDepleted = _moves == LIMIT; //_validMoves == _maxMoves; podmienka ukoncenia hry
 
         foreach (GameGoalDto g in p_goals)
         {

@@ -42,8 +42,9 @@ public class SolverManager
         {
             IExploration exp = null;
             exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.15f);
+            exp.Init(0.15f);
             //exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
-            //exp.Init(0.02f, 0f);
+            //exp.Init(0.05f, 0f);
 
             /*
             if (i % 2 == 0)
@@ -121,7 +122,7 @@ public class SolverManager
             {                
                 FG++;
                 _learners[i].Reset();
-                _learners[i].UpdateParams(FG, p_epochs);
+                _learners[i].UpdateParams(FG, p_epochs / 2);
 
 
                 if (_actorMonitor.ContainsKey(i))
