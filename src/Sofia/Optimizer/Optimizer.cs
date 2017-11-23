@@ -155,21 +155,32 @@ namespace Sofia
 
         public void AsyncUpdate()
         {
+            AsyncUpdate(_dW, _db);
+        }
+
+        public void AsyncUpdate(Optimizer p_optimizer)
+        {
+            AsyncUpdate(p_optimizer._dW, p_optimizer._db);
+        }
+
+        private void AsyncUpdate(Dictionary<string, Matrix> p_dW, Dictionary<string, Vector> p_db)
+        {
             if (_asyncMode)
             {
                 foreach (Connection c in _network.Connections.Values)
                 {
                     if (c.Trainable)
                     {
-                        c.Update(_dW[c.Id]);
-                        c.OutGroup.UpdateBias(_db[c.Id]);
+                        c.Update(p_dW[c.Id]);
+                        c.OutGroup.UpdateBias(p_db[c.Id]);
 
-                        _dW[c.Id].Fill(0f);
-                        _db[c.Id].Fill(0f);
+                        p_dW[c.Id].Fill(0f);
+                        p_db[c.Id].Fill(0f);
                     }
                 }
             }
         }
+
 
         protected void WeightDecay(Connection p_connection, bool p_tensor)
         {

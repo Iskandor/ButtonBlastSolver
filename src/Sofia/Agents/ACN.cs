@@ -2,11 +2,6 @@
 using Sofia;
 using Sofia.Algorithm.Exploration;
 using Sofia.Layers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class ACN : BaseAgent
 {
@@ -35,8 +30,10 @@ public class ACN : BaseAgent
         }
 
         optimizer = new ADAM(network);
+        //optimizer.InitAsynchMode(true);
         //optimizer = new RMSProp(network);
         //optimizer = new BackProp(network, 1e-5f, 0.99f, true);
+        //_actorCritic = new A3C(optimizer, network, 0.99f, SolverConfig.GetInstance().async_update);
         _actorCritic = new ActorCritic(optimizer, network, 0.99f);
         _actorCritic.SetAlpha(SolverConfig.GetInstance().learning_rate);
     }
@@ -61,13 +58,13 @@ public class ACN : BaseAgent
 
     override public int ChooseAction(IExploration p_exp, Vector p_estimate)
     {
-        _action = p_exp.ChooseAction(p_estimate, true);
+        _action = p_exp.ChooseAction(p_estimate, false);
         return _action;
     }
 
     override public void Train(Vector p_state0, Vector p_state1, float p_reward, bool p_finished)
     {
-        _actorCritic.Train(p_state0, _action, p_state1, p_reward);
+        _actorCritic.Train(p_state0, _action, p_state1, p_reward, p_finished);
     }
 
     public void ResetContext()

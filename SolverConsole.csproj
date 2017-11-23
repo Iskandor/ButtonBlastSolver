@@ -54,6 +54,7 @@
     <Compile Include="src\Example\Example1.cs" />
     <Compile Include="src\Sofia\Agents\ACN.cs" />
     <Compile Include="src\Sofia\Agents\BaseAgent.cs" />
+    <Compile Include="src\Sofia\Algorithm\A3C.cs" />
     <Compile Include="src\Sofia\Algorithm\AsyncDoubleQLearning.cs" />
     <Compile Include="src\Solver\Experiment1.cs" />
     <Compile Include="src\Solver\Solver.cs" />

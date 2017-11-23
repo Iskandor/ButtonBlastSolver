@@ -41,22 +41,10 @@ public class SolverManager
         for (int i = 0; i < asyncLearners; i++)
         {
             IExploration exp = null;
-            exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.15f);
-            exp.Init(0.15f);
+            exp = new BoltzmannExploration(SolverConfig.GetInstance().epsilon, 0.13f);
+            exp.Init(0.13f);
             //exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
             //exp.Init(0.05f, 0f);
-
-            /*
-            if (i % 2 == 0)
-            {
-                exp = new EGreedyExploration(SolverConfig.GetInstance().epsilon, 0f);
-                exp.Init(0.02f, 0f);
-            }
-            else
-            {
-                exp = new BoltzmannExploration(0.12f, 0.12f);
-            }
-            */
 
             _learners[i] = new AsyncSolver(_inputInterface, _encoder, _agent, exp, _logger);
         }

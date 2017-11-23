@@ -5,9 +5,9 @@ namespace Sofia {
 
     public class ActorCritic
     {
-        private NeuralNetwork _network;
-        private Optimizer _optimizer;
-        private float _gamma;
+        protected NeuralNetwork _network;
+        protected Optimizer _optimizer;
+        protected float _gamma;
 
         public ActorCritic(Optimizer p_optimizer, NeuralNetwork p_network, float p_gamma)
         {
@@ -18,10 +18,10 @@ namespace Sofia {
 
         public void Dispose()
         {
-            _optimizer.Dispose();
+            //_optimizer.Dispose();
         }
 
-        public double Train(Vector p_state0, int p_action, Vector p_state1, float p_reward)
+        virtual public double Train(Vector p_state0, int p_action, Vector p_state1, float p_reward, bool p_final)
         {
             double mse = 0;
             int criticOutput = _network.Output.Size - 1;
@@ -42,7 +42,7 @@ namespace Sofia {
             return mse;
         }
 
-        public void SetAlpha(float p_alpha)
+        virtual public void SetAlpha(float p_alpha)
         {
             if (_optimizer != null)
             {
