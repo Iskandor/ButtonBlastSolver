@@ -52,6 +52,7 @@
     <Compile Include="src\AsyncSolver\AsyncSolver.cs" />
     <Compile Include="src\AsyncSolver\Experiment2.cs" />
     <Compile Include="src\Example\Example1.cs" />
+    <Compile Include="src\Sofia\Agents\A3CN.cs" />
     <Compile Include="src\Sofia\Agents\ACN.cs" />
     <Compile Include="src\Sofia\Agents\BaseAgent.cs" />
     <Compile Include="src\Sofia\Algorithm\A3C.cs" />
