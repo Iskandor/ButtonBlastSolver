@@ -13,13 +13,13 @@ namespace ButtonBlastSolver
 
         static void Main(string[] args)
         {
-            /*
             XOR xor = new XOR();
             xor.Run();
-            */
 
+            /*
             Example1 example1 = new Example1();
             example1.Run();
+            */
 
             /*
             Experiment1 experiment1 = new Experiment1();
